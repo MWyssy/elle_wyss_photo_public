@@ -1,0 +1,16 @@
+
+const Dropdown = ({items, dropDown}) => {
+    return (
+        <ul className={`dropdown ${dropDown ? 'show' : ''}`}>
+            {items.map((menu, index) => {
+                return (
+                    <li key={index} className="menu-items">
+                        <a href={menu.url}>{menu.title}</a>
+                    </li>
+                )
+            })}
+        </ul>
+    )
+}
+
+export default Dropdown;

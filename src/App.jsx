@@ -1,4 +1,6 @@
 import './Styles/App.css'
+import Nav from './components/Nav'
+import Portfolio from './components/Portfolio'
 import Title from './components/Title'
 
 function App() {
@@ -6,7 +8,11 @@ function App() {
  
   return (
     <>
-      <Title />
+      <Nav />
+      <section id='body'>
+        <Title />
+        <Portfolio />
+      </section>
     </>
   )
 }
