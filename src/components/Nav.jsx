@@ -10,7 +10,9 @@ function Nav() {
                 id='logo'
                 alt='Elle Wyss Photo logo'
             ></img>
-            <h1 id='title-text'>Elle Wyss Photo</h1>
+            <a href='/' alt='home'>
+                <h1 id='title-text'>Elle Wyss Photo</h1>
+            </a>
             <MenuItems />
         </nav>
     )

@@ -1,5 +1,5 @@
 #title-text {
-    font: bold 2.7rem 'Tangerine', cursive;
+    font: bold 2.5rem 'Tangerine', cursive;
     color: #fff6eaff;
 }
 
@@ -39,6 +39,7 @@ li {
     align-items: center;
     font: bold 4.7rem 'Tangerine', cursive;
     color: #fff6eaff;
+    margin-right: 1vw;
 }
 
 .menu-items a {
@@ -73,7 +74,7 @@ li {
     backdrop-filter: blur(6.5px);
     -webkit-backdrop-filter: blur(6.5px);
     border: 1px solid rgba(85, 85, 85, 0.02); 
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -124,8 +125,8 @@ li {
         .dropdown {
             width: 93vw;
             height: 50vh;
-            right: 30%;
-            top: 20%;
+            right: 20%;
+            top: 3vh;
         }
         
         .dropdown.show {
@@ -189,8 +190,8 @@ li {
         .dropdown {
             width: 95vw;
             height: 25vh;
-            right: 35%;
-            top: 40%;
+            right: 20%;
+            top: 5.5vh;
         }
         
         .dropdown.show {
