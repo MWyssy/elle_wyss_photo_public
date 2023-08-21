@@ -1,7 +1,7 @@
 
 const Dropdown = ({items, dropDown}) => {
     return (
-        <ul className={`dropdown ${dropDown ? 'show' : ''}`}>
+        <ul className={`dropdown ${dropDown ? 'show' : 'hide'}`}>
             {items.map((menu, index) => {
                 return (
                     <li key={index} className="menu-items">
