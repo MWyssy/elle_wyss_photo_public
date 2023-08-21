@@ -6,7 +6,7 @@ function Title() {
     return (
         <section id='title'>
             <img 
-                src='../src/assets/IMG_3192.jpg'
+                src='../src/assets/Weddings/Beth & Tom/Beth & Tom photo story 51.jpg'
                 id='title-image'
             ></img>
         </section>

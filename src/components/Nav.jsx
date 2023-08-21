@@ -6,7 +6,7 @@ function Nav() {
     return (
         <nav id='navbar'>
             <img 
-                src='../src/assets/logo-light.svg'
+                src='../src/assets/Logo/logo-light.svg'
                 id='logo'
                 alt='Elle Wyss Photo logo'
             ></img>
