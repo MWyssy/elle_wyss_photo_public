@@ -6,8 +6,9 @@ function About() {
     return (
         <section id='about'>
             <img 
-                src='../src/assets/Weddings/Tom and Rebecca/Rebecca and Tom Wedding Story 39.jpg'
+                src='../src/assets/Images/about.jpg'
                 id='about-image'
+                alt='about background image, a bouquet of flowers held by the bride'
             ></img>
             <section className='about-text'>
                 <h2 className='about-title'>About</h2>

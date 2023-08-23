@@ -8,7 +8,7 @@ function Nav() {
             <img 
                 src='../src/assets/Logo/logo-light.svg'
                 id='logo'
-                alt='Elle Wyss Photo logo'
+                alt='Elle Wyss Photography logo'
             ></img>
             <a href='/' alt='home'>
                 <h1 id='title-text'>Elle Wyss Photo</h1>
