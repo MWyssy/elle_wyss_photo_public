@@ -1,6 +1,45 @@
 import '../Styles/Showreel.css'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Image from 'react-image-enlarger'
+
+function ImageZoom({ src }) {
+    const [zoomed, setZoomed] = useState(false)
+    const [screenOrientation, setScreenOrientation] = useState(
+        window.matchMedia('(orientation: portrait)').matches ? 'portrait' : 'landscape'
+    );
+
+    useEffect(() => {
+        const handleOrientationChange = () => {
+            setScreenOrientation(
+                window.matchMedia('(orientation: portrait)').matches ? 'portrait' : 'landscape'
+            );
+        };
+
+        window.addEventListener('orientationchange', handleOrientationChange);
+
+        return () => {
+            window.removeEventListener('orientationchange', handleOrientationChange);
+        };
+    }, []);
+
+    const imageStyles = 
+        screenOrientation === 'portrait'
+            ? { width: "98vw", height: "auto", objectFit: "cover", zIndex: "3"}
+            : { width: "48vw", height: "auto", aspectRatio: '1/1', objectFit: "cover", zIndex: "3"}
+
+    return (
+        <section >
+            <Image
+                style={imageStyles}
+                zoomed={zoomed}
+                src={src}
+                onClick={() => setZoomed(true)}
+                onRequestClose={() => setZoomed(false)}
+            />
+        </section>
+    )
+}
 
 function Showreel({ url, name }) {
     const [showReel, setShowReel] = useState([]) 
@@ -24,21 +63,22 @@ function Showreel({ url, name }) {
     }, []);
 
     return (
-        <section id='showreel'>
+        <>
             <h3>{name}</h3>
-            {showReel.map((image, index) => {
-                return (
-                    <>
-                        <img 
-                            src={image}
-                            key={index}
-                            alt={`${name}'s wedding story, image ${index}`}
-                            className='showreel-image'
-                        ></img>
-                    </>
-                )
-            })}
-        </section>
+            <section className='showreel'>
+                {showReel.map((image, index) => {
+                    return (
+                        <>
+                            <ImageZoom 
+                                src={image}
+                                key={index}
+                                alt={`${name}'s wedding story, image ${index}`}
+                            />
+                        </>
+                    )
+                })}
+            </section>
+        </>
     )
 }
 

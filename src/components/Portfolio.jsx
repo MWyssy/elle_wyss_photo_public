@@ -7,7 +7,7 @@ function Portfolio({ couples }) {
     
 
     return (
-        <section id='portfolio-links'>
+        <section id='portfolio'>
             <h2 id='portfolio-title'>Portfolio</h2>
             <img id='portfolio-title-underline' src='../src/assets/Logo/underline.svg'></img>
             {couples.map((couple, index) => {

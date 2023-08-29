@@ -5,7 +5,7 @@ import { Sling as Hamburger } from 'hamburger-react';
 const menuItems = [
     {
         title: 'Portfolio',
-        url: '/',
+        url: '/#portfolio',
     },
     {
         title: 'About',

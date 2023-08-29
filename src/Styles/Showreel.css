@@ -1,20 +1,27 @@
 h3 {
-  font: bold 3rem 'Tangerine', cursive;
-  margin: 12vh 0 1vh 0;
+
 }
 
-#showreel {
+.showreel {
     display: grid;
+    gap: 0.25rem;
 }
 
 .showreel-image {
-  width: 100%;
-  height: auto;
   margin: 1vh 0 0 0;
 }
   
   @media (orientation: portrait) {
     @media (min-width: 0px) {
+      .showreel-image {
+        width: 100%;
+        height: auto;
+        margin: 1vh 0 0 0;
+      }
+      h3 {
+        font: bold 3rem 'Tangerine', cursive;
+        margin: 12vh 0 1vh 0;
+      }
     }
     @media (max-height: 760px) {
     }
@@ -24,6 +31,16 @@ h3 {
   
   @media (orientation: landscape) {
     @media (min-width: 0px) {
+      .showreel-image {
+      }
+      
+      .showreel {
+        grid-template-columns: 1fr 1fr;
+      }
+      h3 {
+        font: bold 5rem 'Tangerine', cursive;
+        margin: 12vw 0 1vw 0;
+      }
     }
     @media (min-width: 1000px) {
     }
