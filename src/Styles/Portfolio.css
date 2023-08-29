@@ -1,4 +1,50 @@
+#portfolio-title {
+    font: bold 6rem 'Tangerine', cursive;
+    margin: 5vh 0 0 0;
+}
 
+#portfolio-title-underline {
+    box-shadow: none;
+    width: 80vw;
+    justify-self: center;
+    margin: -2vh 0 1vh 0;
+}
+
+.couple-cover {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.couple-link {
+    display: inline-block;
+    position: relative;
+}
+
+.couple-link .couple-cover {
+    transition: filter 0.3s ease;
+}
+
+.couple-link:hover .couple-cover {
+    filter: blur(5px);
+}
+
+.couple-title {
+    font: bold 3rem 'Tangerine', cursive;
+    margin: 7.5vh 0 1vh 0;
+}
+
+#portfolio-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    width: 100vw;
+    margin: -10px;
+}
 
 @media (orientation: portrait) {
     @media (min-width: 0px) {

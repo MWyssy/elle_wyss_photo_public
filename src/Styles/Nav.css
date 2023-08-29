@@ -24,6 +24,7 @@ li {
 #logo {
     aspect-ratio: 1/1;
     height: 80%;
+    box-shadow: none;
 }
 
 .menus {

@@ -8,6 +8,10 @@ a {
   width: 100%;
 }
 
+img {
+  box-shadow: -1px 1px 10px 2px #cfcfcf;
+}
+
 @media (orientation: portrait) {
   @media (min-width: 0px) {
   }

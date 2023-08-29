@@ -39,7 +39,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           {couples.map((couple) => {
             const { url, name } = couple
-            return <Route path={url} element={<Showreel couple={couple}/>} key={name} />
+            return <Route path={url} element={<Showreel name={name} url={url}/>} key={name} />
           })}
         </Routes>
       </Router>

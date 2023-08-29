@@ -1,11 +1,16 @@
-h1 {
-    font-size: 5rem;
-    color: black;
+h3 {
+  font: bold 3rem 'Tangerine', cursive;
+  margin: 12vh 0 1vh 0;
 }
 
 #showreel {
     display: grid;
-    border: 2px solid black;
+}
+
+.showreel-image {
+  width: 100%;
+  height: auto;
+  margin: 1vh 0 0 0;
 }
   
   @media (orientation: portrait) {

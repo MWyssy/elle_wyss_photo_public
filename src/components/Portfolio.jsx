@@ -8,16 +8,17 @@ function Portfolio({ couples }) {
 
     return (
         <section id='portfolio-links'>
-            {couples.map((couple) => {
-                const { name, image, url } = couple
+            <h2 id='portfolio-title'>Portfolio</h2>
+            <img id='portfolio-title-underline' src='../src/assets/Logo/underline.svg'></img>
+            {couples.map((couple, index) => {
+                const { name, url, cover_image } = couple
                 return (
                     <>
-                        <img src='/home/mike/software_dev/eli_website/elle_wyss_photo_be/assets/weddings/Tom and Rebecca/Cover/cover.jpg'></img>
                         <CoverCard 
                             name={name}
-                            image={image}
+                            image={cover_image}
                             url={url}
-                            key={name}
+                            key={index}
                         />
                     </>
                 )

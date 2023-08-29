@@ -15,6 +15,7 @@
     width: 100vw;
     object-fit: cover;
     z-index: -1;
+    box-shadow: none;
 }
 
 .about-text {
@@ -37,6 +38,10 @@
 .about-title {
     font-family: 'Tangerine', cursive;
     margin: 2vh;
+}
+
+.about-logo {
+    box-shadow: none;
 }
 
 @media (orientation: portrait) {
