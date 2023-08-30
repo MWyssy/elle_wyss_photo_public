@@ -104,26 +104,11 @@ li {
             margin: 5% 5% 5% 5%;
             font: bold 2.5rem 'Tangerine', cursive;
         }
-        .menus {
-           
-        }
         
         .menu-items {
             font: bold 4.7rem 'Tangerine', cursive;
         }
-        
-        .menu-items a {
 
-        }
-               
-        .menu-items a:hover,
-        .menu-items button:hover {
-
-        }
-        
-        .arrow::after {
-
-        }
         
         .dropdown {
             width: 93vw;
@@ -136,9 +121,7 @@ li {
             grid-template-columns: 1fr;
             padding: 1vh 0;
         }
-        
-        .dropdown .dropdown-submenu {
-        }
+
         
         @keyframes menu-toggle {
             from {
@@ -171,6 +154,10 @@ li {
     @media (max-height: 760px) {
     }
     @media (min-width: 640px) {
+        #title-text {
+            margin-top: 2vh;
+            font-size: 4rem;
+        }
     }
 }
 
@@ -185,23 +172,11 @@ li {
         }
         #title-text {
             margin: 1.5% 5% 5% 5%;
+            font: bold 2.5rem 'Tangerine', cursive;
         }
         
         .menu-items {
             font: bold 3rem 'Tangerine', cursive;
-        }
-        
-        .menu-items a {
-
-        }
-               
-        .menu-items a:hover,
-        .menu-items button:hover {
-
-        }
-        
-        .arrow::after {
-
         }
         
         .dropdown {
@@ -213,10 +188,6 @@ li {
         
         .dropdown.show {
             grid-template-columns: 1fr 1fr 1fr;
-        }
-        
-        .dropdown .dropdown-submenu {
-            
         }
 
         @keyframes menu-toggle {
@@ -250,7 +221,7 @@ li {
     }
     @media (min-width: 1000px) {
         #title-text {
-            margin: 0;
+            margin: 2vh 0 0 0;
             font: bold 5rem 'Tangerine', cursive;
         }
         .dropdown {
