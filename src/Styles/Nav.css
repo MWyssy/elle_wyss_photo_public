@@ -1,5 +1,4 @@
 #title-text {
-    font: bold 2.5rem 'Tangerine', cursive;
     color: #fff6eaff;
 }
 
@@ -39,7 +38,6 @@ li {
     position: relative;
     display: flex;
     align-items: center;
-    font: bold 4.7rem 'Tangerine', cursive;
     color: #fff6eaff;
     margin-right: 1vw;
 }
@@ -53,7 +51,7 @@ li {
        
 .menu-items a:hover,
 .menu-items button:hover {
-    background-color: #f2f2f2;
+    color: #ababab;
 }
 
 .arrow::after {
@@ -188,9 +186,6 @@ li {
         #title-text {
             margin: 1.5% 5% 5% 5%;
         }
-        .menus {
-           
-        }
         
         .menu-items {
             font: bold 3rem 'Tangerine', cursive;
@@ -254,8 +249,34 @@ li {
         }
     }
     @media (min-width: 1000px) {
+        #title-text {
+            margin: 0;
+            font: bold 5rem 'Tangerine', cursive;
+        }
+        .dropdown {
+            width: 95vw;
+            height: 25vh;
+            right: 2vw;
+            top: 4vh;
+        }
+        .menu-items {
+            font: bold 6rem 'Tangerine', cursive;
+        }
     }
     @media (min-width: 1900px) {
+        #title-text {
+            margin: 0;
+            font: bold 10rem 'Tangerine', cursive;
+        }
+        .menu-items {
+            font: bold 10rem 'Tangerine', cursive;
+        }
+        .dropdown {
+            width: 95vw;
+            height: 20vh;
+            right: 2vw;
+            top: 6vh;
+        }
     }        
 
 }

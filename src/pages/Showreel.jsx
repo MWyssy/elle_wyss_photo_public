@@ -25,8 +25,8 @@ function ImageZoom({ src }) {
 
     const imageStyles = 
         screenOrientation === 'portrait'
-            ? { width: "98vw", height: "auto", objectFit: "cover", zIndex: "3"}
-            : { width: "48vw", height: "auto", aspectRatio: '1/1', objectFit: "cover", zIndex: "3"}
+            ? { width: "98%", height: "auto", objectFit: "cover", zIndex: "3"}
+            : { width: "98%", height: "auto", aspectRatio: '1/1', objectFit: "cover", zIndex: "3"}
 
     return (
         <section >

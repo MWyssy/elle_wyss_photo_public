@@ -1,21 +1,15 @@
-#portfolio-title {
-    font: bold 6rem 'Tangerine', cursive;
-    margin: 15vh 0 0 0;
-}
+
 
 #portfolio-title-underline {
     box-shadow: none;
-    width: 80vw;
     justify-self: center;
-    margin: -2vh 0 1vh 0;
+    width: 80vw;
 }
 
 .couple-cover {
     position: relative;
     left: 0;
     top: 0;
-    width: 100vw;
-    height: auto;
     object-fit: cover;
     z-index: -1;
     box-shadow: -1px 1px 10px 2px #cfcfcf;
@@ -31,7 +25,6 @@
 }
 
 .couple-link:hover .couple-cover {
-    filter: blur(5px);
 }
 
 .couple-title {
@@ -49,7 +42,17 @@
 
 @media (orientation: portrait) {
     @media (min-width: 0px) {
-
+        #portfolio-title {
+            font: bold 6rem 'Tangerine', cursive;
+            margin: 15vh 0 0 0;
+        }
+        #portfolio-title-underline {
+            margin: -2vh 0 1vh 0;
+        }
+        .couple-cover {
+            width: 100vw;
+            height: auto;
+        }
     }
     @media (max-height: 760px) {
     }
@@ -59,8 +62,30 @@
 
 @media (orientation: landscape) {
     @media (min-width: 0px) {
+        #portfolio-title {
+            font: bold 6rem 'Tangerine', cursive;
+            margin: 15vh 0 0 0;
+        }
+        #portfolio-title-underline {
+            margin: -2vh 0 1vh 0;
+        }
+        .couple-cover {
+            width: 100vw;
+            height: 80vh;
+        }
     }
     @media (min-width: 1000px) {
+        .couple-title {
+            font: bold 7.5rem 'Tangerine', cursive;
+            margin: 7.5vh 0 1vh 0;
+        }
+        #portfolio-title {
+            font: bold 15rem 'Tangerine', cursive;
+            margin: 15vh 0 0 0;
+        }
+        #portfolio-title-underline {
+            margin: -10vh 0 1vh 0;
+        }
     }
     @media (min-width: 1900px) {
     }        

@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import Showreel from './pages/Showreel.jsx'
+import Footer from './components/Footer'
 
 function App() {
   const [couples, setCouples] = useState([])
@@ -42,6 +43,7 @@ function App() {
             return <Route path={url} element={<Showreel name={name} url={url}/>} key={name} />
           })}
         </Routes>
+        <Footer />
       </Router>
       
     </>
