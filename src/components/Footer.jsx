@@ -7,7 +7,7 @@ function Footer() {
     const emailSubject = 'Photography Enquiry'
 
     return (
-        <footer id='footer'>
+        <footer id='footer-bar'>
             <section id='icons'>
                 <a href={`mailto:eliza.medrea@gmail.com?subject=${emailSubject}`} target='_blank' rel='noreferrer'>
                     <FontAwesomeIcon icon={faEnvelope} className='icon' />

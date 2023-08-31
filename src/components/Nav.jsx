@@ -4,7 +4,7 @@ import MenuItems from './MenuItems';
 function Nav() {
 
     return (
-        <nav id='navbar'>
+        <nav id='nav-bar'>
             <img 
                 src='../src/assets/Logo/logo-light.svg'
                 id='logo'

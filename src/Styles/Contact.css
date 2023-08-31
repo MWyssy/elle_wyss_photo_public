@@ -1,0 +1,86 @@
+#contact {
+    margin-top: 0;
+    height: 78.8vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#contact-form {
+    overflow: scroll;
+    height: 45vh;
+    display: grid;
+}
+
+#contact-title {
+    font: bold 7rem 'Tangerine', cursive;
+    margin-bottom: 0;
+}
+
+#form-details {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    column-gap: 0;
+}
+
+.form-label {
+    width: 35vw;
+    height: 5vh;
+    border-radius: 10px;
+    margin: 2.5vh 0;
+    padding: 1vh 1vw;
+    font: lighter 1rem 'Cairo', sans-serif;
+    border: 1px solid rgb(151, 151, 151);
+}
+
+#message {
+    height: 15vh;
+    width: 75vw;
+    resize: vertical;
+}
+
+.form-button {
+    width: 15vw;
+    height: 6vh;
+    border: 3px solid rgb(225, 225, 225);
+    border-radius: 10px;
+    background-color: rgb(27, 24, 54);
+    color: whitesmoke;
+    font: lighter 1.5rem 'Cairo', sans-serif;
+    justify-self: start;
+    margin-left: 1.2vw;
+}
+
+@media (orientation: portrait) {
+    @media (min-width: 0px) {
+    }
+    @media (max-height: 760px) {
+    }
+    @media (min-width: 640px) {
+    }
+  }
+  
+  @media (orientation: landscape) {
+    @media (min-width: 0px) {
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1900px) {
+        #contact {
+            margin-top: 10vh;
+            height: 70vh;
+        }
+        #contact-title {
+            font: bold 10rem 'Tangerine', cursive;
+        }
+        .form-button {
+            font: lighter 2.5rem 'Cairo', sans-serif;
+        }
+        .form-label {
+            font: lighter 1.75rem 'Cairo', sans-serif;
+        }
+    }        
+  
+  }

@@ -22,7 +22,7 @@ function MenuItems() {
     const [dropDown, setDropdown] = useState(false);
     
     return (
-        <li className='menu-items'>
+        <li className='nav-items'>
             <>
                 <Hamburger 
                     type='button' 
