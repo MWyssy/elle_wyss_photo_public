@@ -55,6 +55,10 @@
 
 @media (orientation: portrait) {
     @media (min-width: 0px) {
+        .form-button {
+            font: lighter 1.5rem 'Cairo', sans-serif;
+            width: 35vw;
+        }
     }
     @media (max-height: 760px) {
     }
@@ -64,6 +68,10 @@
   
   @media (orientation: landscape) {
     @media (min-width: 0px) {
+        #contact {
+            margin-top: 8vh;
+            height: 70vh;
+        }
     }
     @media (min-width: 1000px) {
     }
